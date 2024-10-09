@@ -2,8 +2,13 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $nama = $_POST["nama"];
         $email = $_POST["email"];
-        $password = $_POST["password"];
         $errors = array();
+
+        if (isset($_POST["password"])) {
+            $password = $_POST["password"];
+        } else {
+            $password = "";
+        }
 
         //validasi nama
         if (empty($nama)) {
