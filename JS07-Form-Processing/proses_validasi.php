@@ -18,7 +18,7 @@
         //validasi email
         if (empty($email)) {
             $errors[] = "Email harus diisi.";
-        } elseif (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $errors[] = "Format email tidak valid.";
         }
 
