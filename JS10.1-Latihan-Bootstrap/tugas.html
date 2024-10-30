@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Bootstrap</title>
+    <!-- Link ke bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-laptop-code mr-2"></i>MyWebsite</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fas fa-home mr-1"></i> Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#layanan"><i class="fas fa-cogs mr-1"></i> Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak"><i class="fas fa-envelope mr-1"></i> Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- Carousel -->
+    <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mainCarousel" data-slide-to="1"></li>
+            <li data-target="#mainCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://placehold.co/1200x400/png" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Selamat Datang</h5>
+                    <p>Temukan layanan terbaik kami</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://placehold.co/1200x400/png" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Solusi Profesional</h5>
+                    <p>Untuk kebutuhan Anda</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://placehold.co/1200x400/png" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Alfin Afriansyah</h5>
+                    <p>Siap membantu Anda</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!-- End carousel -->
+
+    <!-- Jumbotron -->
+     <div class="jumbotron jumbotron-fluid text-center bg-primary text-white">
+        <div class="container">
+            <h1 class="display-4">Selamat Datang</h1>
+            <p class="lead">Saya adalah Iga Ramadana Sahputra</p>
+            <p class="lead">Ini adalah Jumbotron menggunakan Bootstrap 4</p>
+            <button class="btn btn-light btn-lg">Info Selengkapnya</button>
+        </div>
+     </div>
+     <!-- End jumbotron -->
+
+     <!-- Konten Utama -->
+    <div class="container my-5">
+        <!-- Bagian Gambar dengan Card -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://placehold.co/600x400/png" class="card-img-top" alt="Gambar 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Layanan 1</h5>
+                        <p class="card-text">Deskripsi singkat tentang layanan pertama yang kami tawarkan.</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://placehold.co/600x400/png" class="card-img-top" alt="Gambar 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Layanan 2</h5>
+                        <p class="card-text">Deskripsi singkat tentang layanan kedua yang kami tawarkan.</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://placehold.co/600x400/png" class="card-img-top" alt="Gambar 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Layanan 3</h5>
+                        <p class="card-text">Deskripsi singkat tentang layanan ketiga yang kami tawarkan.</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alert -->
+        <div class="alert alert-success alert-dismissible fade show my-4" role="alert">
+            <strong>Selamat!</strong> Anda telah berhasil membuat website dengan Bootstrap.
+            <button type="button" class="close" data-dismiss="alert">
+                <span>&times;</span>
+            </button>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress my-4">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Tugas. coded with love <a href="https://github.com/igaramadana">Igaramadana</a></p>
+        </div>
+    </footer>
+
+        <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+</body>
+</html>
